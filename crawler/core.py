@@ -254,6 +254,8 @@ class DrugDataCrawler:
                             if drug_details:
                                 processing_stats["successful"] += 1
                                 batch_results.append(drug_details)
+                                # Save each drug immediately after scraping
+                                data_handler.save_incremental([drug_details])
                                 batch_pbar.set_postfix(success=f"{processing_stats['successful']}/{processing_stats['total_processed']}", 
                                                      time=f"{url_elapsed:.2f}s")
                             else:
