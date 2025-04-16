@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+request_timing.log
+
+# Cached data
+drug_data/cache/
+drug_data/cache/html/
+drug_data/images/
+
+# Project-specific files
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Database files
+*.sqlite
+*.db
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Local development configuration
+.env
+.env.local
+
+# User-specific cache files
+uv.lock
